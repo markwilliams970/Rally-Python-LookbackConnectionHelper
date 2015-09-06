@@ -28,7 +28,7 @@ class rally_lookback_connection_helper(object):
         if self.config.get('apikey', None):
             self.apikey                        = self.config['apikey']
             self.session.headers['ZSESSIONID'] = self.apikey
-            self.user                          = None
+            self.username                      = None
             self.password                      = None
         else:
             self.username     = self.config['username']
